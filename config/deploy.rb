@@ -2,13 +2,15 @@
 lock "~> 3.11.0"
 
 set :application, "zetetic"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :repo_url, "git@github.com:andrew-hai/zetetic.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/var/www/zetetic"
+
+set :rvm_ruby_version, "2.5.3@zetetic"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
